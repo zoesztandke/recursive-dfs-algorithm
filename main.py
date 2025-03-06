@@ -12,7 +12,7 @@ def dfs(G: Dict[Union[int, str], Set[Union[int, str]]]) -> None:
         if not visited[v]: # if vertex is not visited
             dfs_from_vertex(G, v, visited) # call dfs from that vertex
 
-def dfs_from_vertex(G, v, visited) -> None:
+def dfs_from_vertex(G: Dict[Union[int, str], Set[Union[int, str]]], v: Union[int, str], visited: Dict[Union[int, str], bool]) -> None:
     """
     Depth-first search from vertex v
     :param G: a graph G
